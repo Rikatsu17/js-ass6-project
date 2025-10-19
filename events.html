@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rikatsu - Events</title>
+    <link rel="icon" type="image/png" href="materials/fav.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/events.css">
+</head>
+
+<body>
+    <header id="header-basic">
+        <span class="logo-text" style="color:black">Rikatsu</span>
+        <nav class="header-points">
+            <a href="#" class="nav-links">Home</a>
+            <a href="#" class="nav-links">About</a>
+            <a href="#" class="nav-links">Projects</a>
+            <a href="#" class="nav-links">Contact</a>
+        </nav>
+
+        <nav class="logo-contacts">
+            <a href="https://www.instagram.com/dani.jieee/"><img class="nav-button" src="materials/instagram_logo.png"></a>
+            <a href="#"><img class="nav-button" src="materials/telegram_logo.png"></a>
+            <a href="https://www.linkedin.com/in/daniyal-adilbekov-51ba6335a/"><img class="nav-button" src="materials/linkedin_logo.webp"></a>
+        </nav>
+    </header>
+
+    <main id="main-basic">
+        <h1 class="word">Events</h1>
+
+        <section class="js-section">
+            <h2>Hover Effect</h2>
+            <div class="center-container">
+                <div id="hoverBox" class="js-box"></div>
+            </div>
+            <p class="description">Hover over the box to change its color.</p>
+        </section>
+
+        <section class="js-section">
+            <h2>Real-time Input</h2>
+            <div class="input-group">
+                <input type="text" id="inputField" placeholder="Type something here...">
+                <p id="output" class="output-text"></p>
+            </div>
+        </section>
+
+        <section class="js-section form-container">
+            <h2>Form Validation</h2>
+            <form id="eventForm" class="validation-form">
+                <input id="name" placeholder="Name" class="form-input"><br>
+                <input id="email" type="email" placeholder="Email" class="form-input"><br>
+                <input id="password" type="password" placeholder="Password" class="form-input"><br>
+                <p id="error" class="error-message"></p>
+                <button type="submit" class="submit-button">Validate & Submit</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer id="footer-basic">
+        Made by Rikatsu
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts/events.js"></script>
+</body>
+</html>
