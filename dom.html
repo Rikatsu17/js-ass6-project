@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rikatsu - dom</title>
+  <link rel="icon" type="image/png" href="materials/fav.png">
+  <link rel="stylesheet" href="styles/dom.css">
+  <style>
+    /* Временно добавил стили сюда, но лучше держать их в styles/dom.css */
+    /* Стили находятся в секции CSS ниже */
+  </style>
+</head>
+<body>
+  <header id="header-basic">
+    <span class="logo-text" style="color:black">Rikatsu</span>
+    <nav class="header-points">
+      <a href='#' class="nav-links">Home</a>
+      <a href='#' class="nav-links">About</a>
+      <a href='#' class="nav-links">Projects</a>
+      <a href="#" class="nav-links">Contact</a>
+    </nav>
+
+    <nav class="logo-contacts">
+      <a href='https://www.instagram.com/dani.jieee/'><img class="nav-button" src="materials/instagram_logo.png"></a>
+      <a href='#'><img class="nav-button" src="materials/telegram_logo.png"></a>
+      <a href='https://www.linkedin.com/in/daniyal-adilbekov-51ba6335a/' ><img class="nav-button" src="materials/linkedin_logo.webp"></a>
+    </nav>
+  </header>
+
+  <main id="main-basic">
+    <H1 class="word">Dom Manipulation</H1>
+    
+    <div class="dom-section">
+      <p id="text" class="dom-element">Original text</p>
+      <div class="dom-controls">
+        <button onclick="changeText()" class="js-button-change">Change Text</button>
+      </div>
+    </div>
+
+    <div class="dom-section">
+      <div id="box" class=" dom-element box-styles">Hello World!</div>
+      <div class="dom-controls">
+        <button onclick="changeColor()" class="js-button-change">Change Color</button>
+        <button onclick="changeFont()" class="js-button-change">Change Font Size</button>
+      </div>
+    </div>
+
+    <div class="dom-section">
+      <ul id="list" class="dom-element list-styles">
+        <li>Item 1</li>
+      </ul>
+      <div class="dom-controls">
+        <button onclick="addItem()" class="js-button-change">Add Item</button>
+        <button onclick="removeItem()" class="js-button-change">Remove Item</button>
+      </div>
+    </div>
+  </main>
+
+  <footer id="footer-basic">
+    Made by Rikatsu
+  </footer>
+
+  <script src="scripts/dom.js"></script>
+</body>
+</html>
